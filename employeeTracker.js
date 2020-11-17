@@ -6,7 +6,7 @@ const cTable = require('console.table');
 // const Choice = require("inquirer/lib/objects/choice");
 // const { start } = require("repl"); not sure where this came, it automatically appeared
 
-// establish connection to mysql
+// Establish connection to mysql
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -17,10 +17,11 @@ var connection = mysql.createConnection({
 
 connection.connect(function (err) {
     if (err) throw err;
+    console.log("Local host connected as id:" + connection.threadId);
     start();
 });
 
-// function to begin the program in terminal
+// Start the program and prompt user for input
 function start() {
     inquirer
         .prompt([
@@ -47,6 +48,7 @@ function start() {
                 case "View All Employee's By Department":
                     viewAllRoles();
                     break;
+
                 case "View all Emplyees By Role":
                     viewAllDepartments();
                     break;
@@ -54,9 +56,11 @@ function start() {
                 case "Add Department":
                     addDepartment();
                     break;
+
                 case "Add Role":
                     addRole();
                     break;
+
                 case "Add Employee":
                     addEmployee();
                     break;
@@ -65,5 +69,24 @@ function start() {
                     updateEmployeeRole();
                     break;
             }
-        })
-}
+        });
+};
+
+// View All Employees //
+function viewAllEmployees(){
+    connection.query("SELECT * FROM employee",function(err, res) {
+        if (err) throw err;
+        for (var i = 0; i < res.length; i++){
+            console.log(res[i].id + "|" + res[i].first_name + "|" + res[i].last_name + "|" + res[i].role_id + "|", res[i].manager_id);
+        }
+        start();
+    });
+};
+// View All Employees By Dept.//
+// View All Employees By Role //
+// View All Roles //
+// View All Departments //
+// Add Department //
+// Add Role //
+// Add Employee //
+// Update Employee Role //
