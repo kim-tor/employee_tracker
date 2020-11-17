@@ -84,8 +84,6 @@ function viewAllEmployees(){
 };
 // View All Employees By Dept.//
 // View All Employees By Role //
-// View All Roles //
-// View All Departments //
 // Add Department //
 // Add Role //
 // Add Employee //
