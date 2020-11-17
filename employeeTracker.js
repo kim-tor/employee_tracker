@@ -1,11 +1,12 @@
-request("dotenv").config();
+require("dotenv").config();
 
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 const cTable = require('console.table');
-const Choice = require("inquirer/lib/objects/choice");
+// const Choice = require("inquirer/lib/objects/choice");
 // const { start } = require("repl"); not sure where this came, it automatically appeared
 
+// establish connection to mysql
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -19,6 +20,7 @@ connection.connect(function (err) {
     start();
 });
 
+// function to begin the program in terminal
 function start() {
     inquirer
         .prompt([

@@ -4,7 +4,10 @@
   "description": "## Table of Contents * [Description](#description) * [Installation](#installation) * [Usage](#usage) * [Credits](#credits) * [License](#License)",
   "main": "employeeTracker.js",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {},
   "scripts": {

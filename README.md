@@ -11,7 +11,7 @@
 Architect and build a solution for managing a company's employees using node, inquirer, and MySQL
 
 ## Installation
-To begin I ran an npm install dotenv, I required in mysql file and the inquirer package.
+To begin I ran an npm install dotenv, then I did an npm install of inquirer, mysql, and console.table. 
 
 ## Usage
 
