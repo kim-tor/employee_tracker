@@ -46,11 +46,11 @@ function start() {
                     break;
 
                 case "View All Employee's By Department":
-                    viewAllRoles();
+                    viewAllDepartments();
                     break;
 
                 case "View all Emplyees By Role":
-                    viewAllDepartments();
+                    viewAllRoles();
                     break;
 
                 case "Add Department":
