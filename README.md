@@ -19,6 +19,8 @@ To begin I ran an npm install dotenv, I required in mysql file and the inquirer 
 ## Resources
 * npmjs
 * expressjs
+* https://www.npmjs.com/package/dotenv
+* https://www.npmjs.com/package/console.table
 
 ## License
 MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
