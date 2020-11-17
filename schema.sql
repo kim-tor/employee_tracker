@@ -28,3 +28,6 @@ CREATE TABLE employee(
     manager_id INT;
 );
 
+SELECT * FROM department;
+SELECT * FROM roles;
+SELECT * FROM employee;
