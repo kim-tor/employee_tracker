@@ -16,6 +16,8 @@ To begin I ran an npm install dotenv, then I did an npm install of inquirer, mys
 ## Usage
 Run the js file in the terminal and the CLI begins and you are prompted to make selections. All functions work correctly except the Update Employee. I get an error and I am not sure what the error is but I will continue to work on it. 
 
+![](employeeTracker.gif)
+
 ## Resources
 * npmjs
 * expressjs
