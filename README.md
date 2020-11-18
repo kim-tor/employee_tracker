@@ -14,7 +14,7 @@ Architect and build a solution for managing a company's employees using node, in
 To begin I ran an npm install dotenv, then I did an npm install of inquirer, mysql, and console.table. 
 
 ## Usage
-
+Run the js file in the terminal and the CLI begins and you are prompted to make selections. All functions work correctly except the Update Employee. I get an error and I am not sure what the error is but I will continue to work on it. 
 
 ## Resources
 * npmjs
